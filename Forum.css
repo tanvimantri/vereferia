@@ -135,6 +135,30 @@ h1{
 header{
     margin-inline: 10px;
 }
+.nav-Forum
+{
+    
+    float: right;
+    margin-right: 80px;
+    margin-top: 1.8em;
+}
+
+.nav-Forum a button
+{
+    color: #eeeeee;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1.8vw;
+    border: none;
+    background-color: transparent;
+}
+.nav-Forum a button:hover
+{
+    background:#553c8f ;
+    color: #fff;
+
+}
+
   /* Nav Bar styles */
 .navbar{
     display:flex;

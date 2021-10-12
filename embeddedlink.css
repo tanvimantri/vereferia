@@ -15,6 +15,30 @@ body
     background-size:cover;
     min-height: 100vh;
 }
+.nav-council
+{
+    
+    float: right;
+    margin-right: 8em;
+    margin-top: -40em;
+}
+
+.nav-council a button
+{
+    color: #eeeeee;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1.8vw;
+    border: none;
+    background-color: transparent;
+}
+.nav-council a button:hover
+{
+    background:#553c8f ;
+    color: #fff;
+
+}
+
 .logo #text
 {
     font-size: 3em;
