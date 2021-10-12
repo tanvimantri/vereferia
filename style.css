@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    background: #220b33;
+    min-height: 100vh;
+}
+#header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header1 {
+    position: absolute;
+    margin-top: -22vh;
+    left: 60%;
+    top: 1em;
+    padding: 1em;
+    
+    
+}
+
+#header1 ul
+{
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header1 ul li
+{
+    margin-top: 3vh;
+    list-style: none;
+    margin-right: 0px;
+    font-size: 1.8em;
+}
+#header1 ul li a
+{
+    text-decoration: none;
+    padding: 3px 10px;
+    color: #eeeeee;
+    border-radius: 20px;
+}
+#header1 ul li a:hover,
+#header1 ul li a.active
+{
+    background:#553c8f ;
+    color: #fff;
+
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    pointer-events: none;
+}
+
+
+.Home
+{
+    background-image: url("img/Galaxy.png");  
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* animation: animateGalaxy 9s linear infinite; */
+
+}
+
+@keyframes animateGalaxy
+{
+    0%,100%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+}
+
+span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba( 255,255,255,0.1),
+    0 0 0 10px rgba(255,255,255,0.1)
+    0 0 25px rgba(255,255,255,1);
+    animation: animate 5s linear infinite;
+}
+span::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent) ;
+}
+@keyframes animate
+{
+    0%
+     {
+         transform: rotate(315deg) translateX(0);
+         opacity:1;
+     }
+     70%
+    {
+        opacity:1;
+    }
+    100%
+     {
+         transform: rotate(315deg) translateX(-1000px);
+         opacity:1;
+     }
+}
+#cloud
+{
+    height: 20vh;
+    position: absolute;
+}
+
+section:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+    /* background: linear-gradient(to top, #0a2a43, transparent); */
+    z-index: 10000;
+}
+
+section:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #0a2a43; */
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+section .img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section #text
+{
+    position:absolute;
+    color: rgba(238, 236, 236, 0.781);;
+    margin-top: -10vh;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.22em;
+    font-family: 'Rancho', cursive;
+}
+
+
+section #text2 
+{
+    position: absolute;
+    color:#afafb4;
+    text-align: center;
+    font-size: 5vh;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: rgb(67, 46, 114);
+    color: #d2dbdd;
+    font-size: 1.2em;
+    font: weight 500; 
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #220b33;
+}
+
+.sec h2
+{
+    font-size: 5.5em;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+.sec p
+{
+   font-size: 1.8em;
+   color: #fff; 
+}
+
+section3
+{
+    position: relative;
+}
+
+section3::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#0a2a43 , #1670d8);
+}
+
+section4 #text2
+{
+    position:absolute;
+    color:rgba(238, 236, 236, 0.781);
+    margin-top: -10vh;
+    padding: 5px  ,20px;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 0.22em;
+    font-family: 'Rancho', cursive;
+}
+
+section4 #text3
+{
+    position: absolute;
+    color:#dddde9;
+    text-align: center;
+    z-index: 1000;
+    font-size: 3vh;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.container
+{
+    position:absolute;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    z-index: 1;
+}
+.container .card
+{
+    position: relative;
+    background-color: #0a2a43;
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #0a2a43;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(5px);
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .content h2
+{
+    position: absolute;
+    top: -140px;
+    right: -10px;
+    font-size: 8em;
+    color: rgba(211, 204, 204, 0.377);
+    pointer-events: none;
+}
+.container .card .content h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.container .card .content p
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.container .card .content a
+{
+   position: relative;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ #head
+ {
+     position: relative;
+     font-size: 2.5em;
+     color: antiquewhite;
+ }
+
+/* #header2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header2 {
+
+    position: absolute;
+    margin-top: -10vh;
+    left: 50%;
+    top: 3.5em;
+    padding: 1em;
+    
+    
+}
+
+#header2 ul
+{
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header2 ul li
+{
+    margin-top: 3vh;
+    list-style: none;
+    margin-right: 0px;
+    font-size: 1.8em;
+}
+#header2 ul li a
+{
+    text-decoration: none;
+    padding: 3px 10px;
+    color: #eeeeee;
+    border-radius: 20px;
+}
+#header2 ul li a:hover,
+#header2 ul li a.active 
+{
+    background-color:#553c8f !important;
+     color: #fff !important; 
+
+} */
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/council.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+body::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.Logo #text
+{
+    font-size: 4.5em;
+    margin-top:-0.4em;
+    margin-left: 1%;
+    color: rgb(211, 209, 209);
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Rancho', cursive;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position:absolute;
+    z-index: 1000;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    z-index: 1;
+}
+.container .card
+{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(225, 225, 225, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    border-left: 1px solid rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(5px);
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .content h2
+{
+    position: absolute;
+    top: -140px;
+    right: -10px;
+    font-size: 8em;
+    color: rgba(187, 179, 179, 0.452);
+    pointer-events: none;
+}
+.container .card .content h3
+{
+    font-size: 1.6em;
+    color: rgb #B026FF;
+    z-index: 1;
+}
+.container .card .content p
+{
+    font-size: 0.9em;
+    color: rgb(219, 209, 209);
+    font-weight: 300;
+}
+.container .card .content a
+{
+   position: relative;
+    display: inline-block;
+    padding: 6px 20px;
+    margin-top: 15px;
+    background: rgb(82, 61, 129);;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

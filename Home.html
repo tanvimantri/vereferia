@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Parallax scrolling website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" 
+     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    </head>
+    <body><div class= "Home">
+        <header id="header1">
+           
+            <ul>
+                <li><a href="">Login</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./embeddedlink.html">Links</a></li>
+                <li><a href="#">Councils</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Reminder</a></li>
+                
+            </ul>
+        </header>
+        <section>
+          <h1 id="text">Dhruv tara</h1>
+          <h3 id="text2"> your guiding star!</h3>
+           <a href="#" id="btn">Inspire Learning</a>
+          <img src="img/kri.png" id="moon">
+
+        </section>
+            <script type="text/javascript">
+             let moon = document.getElementById("moon")
+             let text = document.getElementById("text")
+             let text2 = document.getElementById("text2")
+             let btn = document.getElementById("btn")
+             let header = document.getElementById("header")
+              window.addEventListener('scroll', function(){
+               var value = window.scrollY
+               moon.style.left = value * 1.5+ 'px';
+               text.style.top = 180 + value * -0.4 + 'px';
+            //    text2.style.top =  100 + value * 0.04 + 'px';
+               btn.style.marginTop = value * 1 + 'px';
+               header.style.top = value * 0.5 + 'px';
+
+           })
+            </script>
+            <section1>
+                <span></span>
+    
+        
+        <div class="sec">
+        <h2>About</h2>
+        <p>In this current scenario, me and my peers faced a lot of issues while beginning out engineering journey like
+        :How to get started? How to proceed 1
+        ? How to exceed further in this journey? Hence, we bring to you a platform where our
+         juniors would find a ray of hope to begin their journey with!</p><br>
+         <p>Here, on Dhruvtara ,we give you the space to explore how engineering life works through the experienced engineering students themselves.
+        Get the resources you’ll need to study,important apps you’ll need to get started with engineering and get to know more about internships,
+        resume building and lot of thrilling stuff from our amazing seniors!</p>
+        <section4>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h4 id="text2" >Meet our Amazing Team</h4> <br>
+        <h5 id="text3" style="margin-top: 10px;"> <i>Coming together is beginning, staying together is a progress and working together is SUCCESS </i></h5>
+         <div class="flex-container">
+            <div class="container" style="margin-top: 19vh;" >
+                
+                <div class="card">
+                    <div class="content">
+                        
+                        <h3>Krithika Saravanan</h3>
+                        <p>Computer science and technology</p>
+                        <a href="https://www.linkedin.com/in/krithika-saravanan7">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        
+                        <h3>Tanvi Mantri</h3>
+                        <p>Computer science and technology</p>
+                        <a href="https://www.linkedin.com/in/tanvi-mantri">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        
+                        <h3>Preethika K</h3>
+                        <p>Computer Engineering</p>
+                            <a href="https://www.linkedin.com/in/preethika-k-658872206">LinkedIn</a>
+                    </div>
+                </div>
+                
+            </div>
+             <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+            
+        
+        });
+        
+        </script>
+        </section4>
+       </div>
+    </div>    
+    </div></body>
+</html> 
