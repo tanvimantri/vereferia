@@ -15,15 +15,14 @@ body
     background-size:cover;
     min-height: 100vh;
 }
-.nav-council
+.nav-Link
 {
-    
-    float: right;
-    margin-right: 8em;
+
+   
     margin-top: -40em;
 }
 
-.nav-council a button
+.nav-Link a button
 {
     color: #eeeeee;
     padding: 8px 20px;
@@ -32,7 +31,7 @@ body
     border: none;
     background-color: transparent;
 }
-.nav-council a button:hover
+.nav-Link a button:hover
 {
     background:#553c8f ;
     color: #fff;
