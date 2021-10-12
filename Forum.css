@@ -149,6 +149,7 @@ header{
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 1.8vw;
+    cursor: pointer;
     border: none;
     background-color: transparent;
 }

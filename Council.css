@@ -40,7 +40,7 @@ body::after
 {
     font-size: 4.5em;
     margin-top:-0.8em;
-    margin-left: 1%;
+    margin-left: 26%;
     color: rgb(211, 209, 209);
     letter-spacing: 2px;
     font-weight: 400;
@@ -53,25 +53,28 @@ body::after
     z-index: 1000;
 }
 
-.navbar
+.nav
 {
-    float: right;
-    margin-right: 80px;
-    margin-top: -3em;
+    
+    margin-right:1vw;
+    margin-top: -38vw;
+    z-index: 9999;
 }
-.navbar a button
+.nav a button
 {
     color: #eeeeee;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 1.8vw;
     border: none;
+    /* background:#553c8f ; */
     background-color: transparent;
+    cursor: pointer;
 }
 
-.navbar a button:hover
+.nav a button:hover
 {
-    background:#553c8f ;
+    background-color: #553c8f;
     color: #fff;
 
 }

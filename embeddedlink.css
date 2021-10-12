@@ -29,6 +29,7 @@ body
     border-radius: 20px;
     font-size: 1.8vw;
     border: none;
+    cursor: pointer;
     background-color: transparent;
 }
 .nav-Link a button:hover
